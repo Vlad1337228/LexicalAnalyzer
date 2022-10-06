@@ -1,0 +1,17 @@
+﻿<Window x:Class="FYT_laba1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FYT_laba1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid KeyDown="Grid_KeyDown">
+        <TextBox x:Name="textBox_input" AcceptsReturn="True" HorizontalAlignment="Left" Margin="35,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="148"  />
+        <TextBox x:Name="textBox_output" IsReadOnly="True" HorizontalAlignment="Left" Margin="405,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="148" Background="#FFF0EAEA"/>
+        <Button Content="Старт" HorizontalAlignment="Left" Margin="35,240,0,0" VerticalAlignment="Top" Height="31" Width="360" Click="Button_Click"/>
+        <Label Content="1) (110)*101(111)*&#xD;&#xA;2) (a|b|c|d) нет подстроки ad&#xD;&#xA;3) многострочный комментарий /*......*/" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="72" Width="780"/>
+        <TextBox x:Name="textBox_errors" IsReadOnly="True" HorizontalAlignment="Center" Margin="0,276,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="716" Height="97" Background="#FFF0EAEA"/>
+
+    </Grid>
+</Window>
